@@ -5,8 +5,6 @@ def Funkcja(f, g):
     assert isinstance(g, np.ndarray), "Podany parametr nie jest tablicą ndarray !"
     assert f.size == g.size, "Tablice nie sa jednakowej dlugosci !"
 
-    MSE = np.array([])
-    SNR = np.array([])
     MSE = (1/f.size)*sum((f-g)**2)
     SNR = 10*np.log10((sum(f**2)/sum((f-g)**2)))
 
