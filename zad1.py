@@ -1,8 +1,8 @@
 import numpy as np
 
 def Funkcja(f, g):
-    assert isinstance(f, np.ndarray), "Podany parametr nie jest tablica ndarray !"
-    assert isinstance(g, np.ndarray), "Podany parametr nie jest tablica ndarray !"
+    assert isinstance(f, np.ndarray), "Podany parametr nie jest tablicą ndarray !"
+    assert isinstance(g, np.ndarray), "Podany parametr nie jest tablicą ndarray !"
     assert f.size == g.size, "Tablice nie sa jednakowej dlugosci !"
 
     MSE = np.array([])
